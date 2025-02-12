@@ -11,8 +11,8 @@ function testNQueen(n){
         console.log("elvisssss","function is safe is being called")
         for (let i = 0; i < row; i++) {
             if (plateau[i][col] == '#') return false;
-            if (col - (row - i) >= 0 && plateau[i][col - (row - i)] === '#') return false;
-            if (col + (row - i) < n && plateau[i][col + (row - i)] === '#') return false;
+            if (col - (row - i) >= 0 && plateau[i][col - (row - i)] == '#') return false;
+            if (col + (row - i) < n && plateau[i][col + (row - i)] == '#') return false;
         }
         return true;
     }
