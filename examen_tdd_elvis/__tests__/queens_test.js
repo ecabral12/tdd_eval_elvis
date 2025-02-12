@@ -28,3 +28,7 @@ test('solves N = 4', () => {
 test('solves N = 6', () => {
     expect(testNQueen(6).length).toBe(4);
 });
+
+test('solves N = 8', () => {
+    expect(testNQueen(8).length).toBe(92);
+});
