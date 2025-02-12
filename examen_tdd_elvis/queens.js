@@ -26,6 +26,7 @@ function testNQueen(n) {
     }
 
     placeQueen(0);
+    console.log("output", output);
     return output;
 }
 
