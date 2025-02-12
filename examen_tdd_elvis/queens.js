@@ -1,4 +1,7 @@
 function testNQueen(n) {
+    if (n < 0) {
+        throw new Error("Le nombre de reines ne peut pas être négatif");
+    }
     const output = [];
     const plateau = Array(n).fill().map(() => Array(n).fill('O'));
 
